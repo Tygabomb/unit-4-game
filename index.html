@@ -1,66 +1,123 @@
 <!DOCTYPE html>
     <html>
     <head>
+    <!-- Required meta tags -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Hind|Mali" rel="stylesheet">
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Crystal Collector</title>
+        <title>Crystal Attack Collector!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+       
     </head>
  
-
-<body>
-    <div class="header">
-        <h1>Crystal Collector</h1>
-    </div>
-    <div class="instructions">
-        <h3>Here's how you play the game</h3>
-        <br>
-        <ul>
-            <li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
-            <li>There are four crystals below.</li>
-            <ul>
-                <li id="blue">Blue</li>
-                <li id="green">Green</li>
-                <li id="red">Red</li>
-                <li id="yellow">Yellow</li>
-            </ul>
-            <li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
-            <li>You win the game by matching your total score to the random number.</li>
-            <li>You lose the game if your total score goes above the random number.</li>
-            <li>The value of each crystal is hidden from you until you click on it.</li>
-            <li>Each time when the game starts, the game will change the values of each crystal.</li>
-        </ul>
-    </div>
-    <div class="numberToMatch">
-        <h2>Number To Get:
-            <span id="randomNumber"></span>
-        </h2>
-    </div>
-    <div class="winsAndLosses">
-        <h2>Wins:
-            <span id="numberWins"></span>
-            <br>
-            Losses:
-            <span id="numberLosses"></span>
-        </h2>
-    </div>
-    <div class="gems">
-        <img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
-        <img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
-        <img src="assets/images/red.png" class=gemImage id="three" alt="Red Gem">
-        <img src="assets/images/yellow.png" class=gemImage id="four" alt="Yellow Gem">
-    </div>
-    <div class="userTotal">
-        <h2>Your total score is:
-            <span id="finalTotal"></span>
-        </h2>
-    </div>
+    <body>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-4 title">
+                    <h1>Crystal Attack Collector!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 instructions">
+                    <p>
+                        Clicking on a character you will add a specific amount of points to your total score.
+                    </p>
+                    <p>
+                        You win the game by excalty matching the total score for the random number.
+                    </p>
+                    <p>
+                        You lose the game if your total score goes above the random number.
+                    </p>
+                    <p>
+                        The value of each character is hidden from you until click'd on
+                    </p>
+                    <p>
+                        Each time the game starts, the values for each character will change.
+                    </p>
+                </div>
+                </div>
+        </div>
+        <div class="container">
+            <div class="row tracking">
+                <div class="col-md-4 targetNumberArea">
+                    <div id="targetNumber"></div>
+                </div>
+                <div class="col-md-2 scoreArea">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Wins:</p>
+                            </div>
+                            <div class="col-md-1">
+                                <div id="winCount"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4"> 
+                                <p>Losses:</p>
+                            </div>
+                            <div class="col-md-1">
+                                <div id="lossCount"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row crystals">
+                <div class="col-md-1">
+                    <img src="./assets/images/Squall.jpeg" id="character1" class="img-fluid" height="100px" width="75px" alt="squall">
+                </div>
+                <div class="col-md-1">
+                    <img src="./assets/images/seifer.jpg" id="character2" class="img-fluid" height="100px" width="75px" alt="seifer">
+                </div>
+                <div class="col-md-1">
+                    <img src="./assets/images/Selphine.jpeg" id="character3" class="img-fluid" height="100px" width="75px" alt="Selphine">
+                </div>
+                <div class="col-md-1">
+                    <img src="./assets/images/Ff8-laguna.jpg" id="character4" class="img-fluid" height="100px" width="75px" alt="laguna">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 scoreStatement">
+                    <p>
+                        Your total score is:
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 userScoreDiv">
+                    <div id="userScore"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    </html>
+    <footer class="sticky" id="footer">
+            <mark>Copyright Tygabomb &copy;</mark><img src="./assets/images/gif_cloud.gif">
+            </div>
+            <footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 
 </html>

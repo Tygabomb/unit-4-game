@@ -1,0 +1,113 @@
+/* * {
+    box-sizing: border-box;
+  } */
+
+body {
+    background-image: url('../images/final-fantasy-7-cloud-strife-1600-1200.jpg');
+    font-family: 'Hind', sans-serif;
+}
+
+.title {
+	background-color: #ee9219ef;
+    color: #fff;
+    margin: 10px 0px 10px 75px;
+	padding: 20px 20px 10px 40px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 25px;
+	
+	
+}
+
+.instructions {
+	background-color: rgb(25, 221, 205);
+    color: #fff;
+    margin: 0px 0px 10px 100px;
+	padding: 20px;
+	font-size: 18px;
+	border-radius: 25px;
+	line-height: 1.5em;
+	
+}
+
+.targetNumberArea {
+	background-color:#b33f90;
+	border-radius: 25px;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+#targetNumber {
+	padding: 20px;
+	margin: 0px 0px 10px 0px;
+}
+
+/* .numberToMatch {
+	clear: both;
+	background-color:
+	color: 
+	font-size: 
+	text-align: 
+} */
+
+.scoreArea {
+	padding: 15px;
+	border-radius: 25px;
+	background-color:#47D7FF;
+	color: #fff;
+	font-size: 15px;
+}
+
+
+.img {
+	position:absolute;
+	height: 100px;
+	width: 100px;
+  }
+  
+  .img:hover {
+	opacity:0;
+  }
+
+#targetNumber {
+	padding: 20px;
+	margin: 0px 0px 10px 0px;
+}
+
+
+
+.tracking {
+	margin-bottom: 10px;
+}
+
+.chacracter {
+	margin-bottom: 10px;
+}
+
+.scoreStatement {
+	color: #fff;
+	background-color: #0c060a;
+	text-align: center;
+	border-radius: 25px;
+	margin-bottom: 20px;
+	
+}
+
+.userScoreDiv {
+	background-color: #b33f90;
+	padding: 30px;
+	font-size: 35px;
+	color: #fff;
+	text-align: center;
+	border-radius: 25px;
+}
+
+#footer {
+	position: sticky;
+	text-align: center;
+
+
+
+
+}
